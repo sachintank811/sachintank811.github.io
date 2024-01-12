@@ -6,45 +6,51 @@
   <title>Under Development</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
     }
 
     .container {
       text-align: center;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 5rem;
+      color: #333;
+      margin-bottom: 20px;
     }
 
     .header {
       font-size: 2rem;
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .message {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       color: #555;
     }
 
-    .image-container {
-      margin-top: 30px;
-    }
-
-    .image {
-      max-width: 100%;
-      height: auto;
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 3rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-	<h1> HynDry.in</h1>
-  
+    <div class="logo">HynDry.in</div>
     <div class="header">This site is under development phase.</div>
     <div class="message">We're working hard to bring you an amazing experience!</div>
   </div>
